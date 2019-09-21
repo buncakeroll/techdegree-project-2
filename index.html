@@ -4,126 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 2</title>
+    <title>Mobile-first Responsive Layout</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     
-    <nav>
+    <nav id="top-nav">
         <h1>Millard Le</h1>
         <ul>
-            <li><a href="#"></a>Home </li>
-            <li><a href="#portfolio"></a>Portfolio </li>
-            <li><a href="#hobbies"></a>Hobbies </li>
-            <li><a href="#contact"></a>Contact </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header>
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web
-            development at Treehouse and am excited to put all my skills to use!
-        </p>
-        <img src="img/responsive-layout-profile.png" alt="Profile Picture">
+        <div class="head">
+                <img class="head-img" src="img/responsive-layout-profile.png" alt="Profile Picture">
+                <p class="head-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web
+                    development at Treehouse and am excited to put all my skills to use!
+                </p>
+        </div>
     </header>
 
     <main>
 
-        <section>
-            <div class="portfolio" id="portfolio">
+        <section class="section-portfolio">
                 <h2>Portfolio</h2>
-                <div class="project">
-                    <h3>Marketing Page</h3>
+            <div class="portfolio" id="portfolio">
+                
+                <div class="project project-1">
                     <img src="img/portfolio-1.png" alt="Porject 1">
-                    <p>This project shows the front page of a marketing website meant for a specific business
+                    <h3>Marketing Page</h3>
+                    <p> This project shows the front page of a marketing website meant for a specific business
                         I'm interested in.
                     </p>
                 </div>
-                <div class="project">
-                    <h3>Search Page</h3>
+
+                <div class="project project-2">
                     <img src="img/portfolio-2.png" alt="Porject 2">
-                    <p>
-                        This project searches through a specific database to find information that the user is trying
-                        to look up.
+                    <h3>Search Page</h3>
+                    <p> This project searches through a specific database to find information that the user is 
+                        trying to look up.
                     </p>
                 </div>
-                <div class="project">
-                    <h3>Travel App</h3>
+
+                <div class="project project-3">                   
                     <img src="img/portfolio-3.png" alt="Porject 3">
-                    <p>
-                        This project compares travel times based on different transportation methods and tells you the best
-                        one.
+                    <h3>Travel App</h3>
+                    <p> This project compares travel times based on different transportation methods and tells 
+                        you the best one.
                     </p>
                 </div>
-                <div class="project">
-                    <h3>Map of Favorite Spots</h3>
+
+                <div class="project project-4">                   
                     <img src="img/portfolio-4.png" alt="Porject 4">
-                    <p>
-                        This project uses mapping apis to plot points for my favorite spots in the city
+                    <h3>Map of Favorite Spots</h3>
+                    <p> This project uses mapping apis to plot points for my favorite spots in the city
                         for a do-it-yourself walking tour.
                     </p>
                 </div>
-                <div class="project">
-                    <h3>Photo Gallery</h3>
+
+                <div class="project project-5">                   
                     <img src="img/portfolio-5.png" alt="Porject 5">
-                    <p>
-                        This project shows pictures from a recent trip to the viewer and allows them to easily navigate
-                        through photos.
+                    <h3>Photo Gallery</h3>
+                    <p> This project shows pictures from a recent trip to the viewer and allows them to easily 
+                        navigate through photos.
                     </p>
                 </div>
-                <div class="project">
-                    <h3>Calculator</h3>
+
+                <div class="project project-6">
                     <img src="img/portfolio-6.png" alt="Porject 6">
-                    <p>
-                        Someone can enter in the numbers they want, and press the big blue button and get the result.
+                    <h3>Calculator</h3>
+                    <p> Someone can enter in the numbers they want, and press the big blue button and get the result.
                     </p>
                 </div>
+
             </div>
 
-
-        </section>
-
-        <section>
             <div class="hobbies" id="hobbies">
                 <h2>hobbies</h2>
+                <p>I like to play recreational badminton in my spare time
+                   with friends and I enjoy playing video games such as
+                   League of Legends and Overwatch. Other than that
+                   I like to practice coding to become a front-end web developer.
+                </p>
             </div>
-        </section>
 
+        </section>    
     </main>
 
-        <section>
-            <div class="contact" id="contact">
-                <h2>Contact</h2>
-                <p>If you're interested in chatting or want more information about what
-                    I've been working on , I'd love to hear from you!
-                </p>
-                <p>Phone <strong>+1 (111) 555-1234</strong></p>
-                <p>Email<strong>email@yoursite.com</strong></p>
-            </div>
-        </section>
+
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>If you're interested in chatting or want more information about what
+           I've been working on, I'd love to hear from you!
+        </p>
+        <br>
+
+        <p>Phone <strong>+1 (111) 555-1234</strong></p>
+        <p>Email <strong>email@yoursite.com</strong></p>
+    </div>
 
 <footer>
 
-    <section>
-        <h2>Millard Le</h2>
-        <ul>
-                <li><a href="#"></a>Home </li>
-                <li><a href="#portfolio"></a>Portfolio </li>
-                <li><a href="#hobbies"></a>Hobbies </li>
-                <li><a href="#contact"></a>Contact </li>
-        </ul>
-
-    </section>
+    <div class="footer-nav">
+        <div class="footer-name">
+            <p>Millard Le</p>
+        </div>
+            
+        <div class="to-top">
+            <p><a href="#top-nav">Back To Top</a></p>
+        </div>
+            
+        <div class="footer-nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
 </footer>
-
-
-
-
-
 
 </body>
 </html>
